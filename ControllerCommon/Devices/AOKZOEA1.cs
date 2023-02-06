@@ -76,6 +76,20 @@ namespace ControllerCommon.Devices
                 new List<KeyCode>() { KeyCode.Snapshot, KeyCode.LWin },
                 false, ControllerButtonFlags.OEM5
                 ));
+
+            // Volume Up key (Single Press)
+            listeners.Add(new DeviceChord("Volume Up key",
+                new List<KeyCode>() { KeyCode.VolumeUp },
+                new List<KeyCode>() { KeyCode.VolumeUp },
+                false, ControllerButtonFlags.OEM7
+                ));
+
+            // Volume Down key (Single Press)
+            listeners.Add(new DeviceChord("Volume Down key",
+                new List<KeyCode>() { KeyCode.VolumeDown },
+                new List<KeyCode>() { KeyCode.VolumeDown },
+                false, ControllerButtonFlags.OEM8
+                ));
         }
     }
 }
